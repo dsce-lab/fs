@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>p6</title></head>
+    <body>
+        <script>
+            var elements=["mango", "TuttyFruity", "Bell", "1DS22IS108", "3300", "Peanuts", 
+"HoD", "Z", "dob", "hod", "Jack"];
+            function alsort(a,b){
+                var astr=a.toString();
+                var bstr=b.toString();
+                return astr.localeCompare(bstr);
+            }
+            elements.sort(alsort);
+            document.write("<h2>AL SORTING</h2><ul>");
+                elements.forEach(function(item){
+                    document.write("<li>"+item+"</li>");
+                });
+                document.write("</ul>")
+        </script>
+    </body>
+</html>

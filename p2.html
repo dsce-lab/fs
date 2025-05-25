@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <haed>
+        <title>p1</title>
+    </haed>
+     <style>
+        table,tr,td,th{
+            border: 1px solid black;
+        }
+        .bts{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            gap: 20px
+            ;
+        }
+    </style> 
+    <body>
+        <center>
+            <h1>Input Validation</h1>
+            <table>
+                <tr>
+                    <td><label>STud Nmae</label></td>
+                   <td><input type="text" nam="name"/></td> 
+                </tr>
+                 <tr>
+                    <td><label>usn</label></td>
+                   <td><input type="text" nam="name"/></td> 
+                </tr>
+                <tr>
+                    <td>Course Elective</td>
+                    <td><select name="e1">
+                        <option value="iot">Iot</option>
+                        <option value="law">CSDF</option>
+                        <option value="mini">DWDM</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>FEES PAID</td>
+                    <td><input type="radio">YES
+                    <input type="radio">NO</td>
+                </tr>
+            </table>
+            <br/>
+            <div class="bts">
+            <button type="submit">Submit</button>
+            <button type="reset">RESET</button>
+            </div>
+        </center>
+    </body>
+</html>

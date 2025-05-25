@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>P5</title></head>
+    <body>
+       <center>
+        <h2>Prime Factors Calculation</h2>
+        <label>ENTER THE NUMBER</label>
+        <input type="number" id="numb"><br>
+        <button onclick="primecal()">Prime Factors</button>
+        <p id="result"></p>
+       </center>
+       <script>
+        function primecal(){
+           let num=parseInt(document.getElementById("numb").value);
+           let res=[];
+           if(isNaN(num) || num<2){
+            document.getElementById("result").innerHTML="NUM > 2";
+            return;
+           }
+           if(num %2 ===0){
+            res.push(2);
+            num/=2;
+           }
+           for(let i=3;i<=Math.sqrt(num);i+=2){
+            if(num%i===0){
+                res.push(i);
+                num/=i;
+            }
+           }
+           if(num>2){
+            res.push(num);
+           }
+           document.getElementById("result").innerHTML="primes are" +res.join(",");
+        }
+       </script>
+    </body>
+
+</html>
